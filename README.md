@@ -43,7 +43,8 @@ const temp = "javascript를 출력할 수 있다."
 --- 안녕하세요
 
 # 이미지 출력
-<img src="/images/140020_141031_1512.jpg" width="100px"></img>
+<img src="https://www.pngitem.com/pimgs/m/562-5621699_github-logo-png-github-octocat-transparent-png.png" width="100px"></img>
+
 
 # 표 만들기 및 강조
 |제목|내용|설명|
