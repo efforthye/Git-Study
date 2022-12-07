@@ -1,8 +1,13 @@
+
+
 const hi = document.getElementById("hi");
 
-hi.onclick = function() {
-    alert("Hello World");
-    console.log("gg");
+hi.onclick = async function() {
+    const test = await axios.post("/board/test", {
+       id : "후후",
+       pw : "비비" 
+    });
+
 };
 
 
