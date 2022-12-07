@@ -1,8 +1,7 @@
-# Git-Study
-## 깃허브 연습용 레포지토리 ##
+# Git-Study : 깃허브 연습용 레포지토리 #
 
 
-# dev에서 작업 후 main에 추가하기
+## dev에서 작업 후 main에 추가하기
 1. dev에서 작업 후 commit push
 2. 깃허브 페이지의 pull requests에서 dev에서 개발한 것을 main으로 추가한다.
 3. main으로 돌아와 fetch와 pull을 받는다.
@@ -12,7 +11,7 @@
 
 
 # Git-README.MD-Study
-# 글자 크기
+## 글자 크기
 # h1
 - # : h1을 출력한다.
 ## h2
