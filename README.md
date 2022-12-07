@@ -8,6 +8,8 @@
 4. dev로 돌아와 main을 기준으로 merge받는다.
 5. 다시 작업한다.
 
+## merge파일 생길 시
+1. Pull requests에서 충돌 해결 후 재커밋.
 
 
 # Git-README.MD-Study
