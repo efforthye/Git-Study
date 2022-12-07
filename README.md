@@ -43,7 +43,7 @@ const temp = "javascript를 출력할 수 있다."
 --- 안녕하세요
 
 # 이미지 출력
-<img src="./images/Create icon_13.gif" width="100px"></img>
+<img src="/images/Create icon_13.gif"></img>
 
 # 표 만들기 및 강조
 |제목|내용|설명|
