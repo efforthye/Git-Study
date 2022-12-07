@@ -1,18 +1,14 @@
-import express from 'express';
-import session from 'express-session';
-import morgan from 'morgan';
-import dotenv from 'dotenv';
-import path from 'path';
-import cookieParser from 'cookie-parser';
-
-// database
-import db from './models/index.js';
-
-// socket
-// const socket = require('./socket.js');
-// import socket from './socket.js';
+const express = require("express");
+const session = require("express-session");
+const morgan = require("morgan");
+const dotenv = require("dotenv");
+const path = require("path");
+const cookieParser = require("cookie-parser");
 
 dotenv.config();
+
+// database
+db = require("./models/index.js");
 
 const app = express();
 app.set("port", process.env.PORT || 8080);
@@ -42,17 +38,14 @@ app.use(
 
 // database
 db.sequelize
-  .sync({ force: false })
-  .then(() => {
-    console.log("DB 연결됨");
-  })
-  .catch((err) => {
-    console.log(err);
-  });
-
-// socket
-// socket(server);
+    .sync({force:false})
+    .then(()=>{
+        console.log("DB 연결됨");
+    })
+    .catch((err)=>{
+       console.log(err); 
+    });
 
 app.listen(app.get("port"), () => {
-  console.log(app.get("port") + " 서버를 열었습니다.");
+  console.log(app.get("port")+" 서버를 열었습니다.");
 });
