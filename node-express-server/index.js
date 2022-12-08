@@ -44,7 +44,7 @@ app.use(
 
 // database
 db.sequelize
-    .sync({force:false})
+    .sync({force:true})
     .then(()=>{
         console.log("DB 연결됨");
     })
