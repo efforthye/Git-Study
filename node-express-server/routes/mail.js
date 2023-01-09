@@ -10,7 +10,7 @@ function generateRandomCode(n) {
     for (let i = 0; i < n; i++) {
         str += Math.floor(Math.random() * 10)
     }
-    return str
+    return str;
 }
 
 let code = "";
@@ -35,9 +35,9 @@ const sendGmail = (_userEmail) => {
     });
     // 메일 옵션
     let mailOptions = {
-        from: `"금쪽이스토리" <${process.env.NODEMAILER_USER}>`, // 보내는 메일의 주소
+        from: `"HYERIM" <${process.env.NODEMAILER_USER}>`, // 보내는 메일의 주소
         to: _userEmail, // 수신할 이메일
-        subject: "[금쪽이스토리] 인증번호를 입력해주세요.", // 메일 제목
+        subject: "[HYERIM TEST] 인증번호를 입력해주세요.", // 메일 제목
         // text: code, // 메일 내용
         text: `인증번호 [${code}]를 인증 창에 입력하세요.`, // 메일 내용
         html: `<h1>이메일 인증</h1>
