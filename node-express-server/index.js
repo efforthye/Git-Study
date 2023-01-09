@@ -17,6 +17,10 @@ const router = require("./routes/index.js");
 const cors = require("cors");
 
 const app = express();
+
+// 크로스오리진
+app.use(cors({origin : "http://localhost:3000", credentials :true}));
+
 app.set("port", process.env.PORT || 8080);
 
 app.use((req, res, next) => {
